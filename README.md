@@ -1,2 +1,6 @@
 # GioMitnick.github.io
-Paradigmas
+Integrantes:
+Grande Sarmiento Lucero
+Palacios Centeno Givanni
+Silvana
+Marco
