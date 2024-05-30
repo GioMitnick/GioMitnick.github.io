@@ -4,6 +4,6 @@ Integrantes:
 - Grande Sarmiento Lucero
 - Palacios Centeno Giovanni
 - Silvana
-- Marco
+- Marcos Rodolfo Macias Mondragon
 
 Verificar cambios: https://giomitnick.github.io/
