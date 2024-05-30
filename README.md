@@ -2,6 +2,6 @@
 
 Integrantes:
 - Grande Sarmiento Lucero
-- Palacios Centeno Givanni
+- Palacios Centeno Giovanni
 - Silvana
 - Marco
