@@ -1,0 +1,2 @@
+# GioMitnick.github.io
+Paradigmas
