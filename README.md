@@ -5,6 +5,8 @@ Integrantes:
 - Palacios Centeno Giovanni
 - Silvana Flores Guerrero
 - Marcos Rodolfo Macias Mondragón
-yoyoyo
 
 Verificar cambios: https://giomitnick.github.io/
+
+
+-prueba
