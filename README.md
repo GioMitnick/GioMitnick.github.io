@@ -7,6 +7,3 @@ Integrantes:
 - Marco
 
 Verificar cambios: https://giomitnick.github.io/
-
-
-Holaaaappp
