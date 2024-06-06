@@ -253,3 +253,44 @@ footer {
   margin-right: 60px;
   margin-left: 60px;
 }
+
+ #priceChart,
+        #analysis {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        #priceChart canvas {k
+            width: 60%;
+            height: auto;
+        }
+        #analysis {
+            flex-direction: column;
+            width: 38%;
+        }
+        #analysis h2 {
+            margin-bottom: 10px;
+        }
+        #analysis p {
+            margin-bottom: 5px;
+        }
+        #analysis ul {
+            list-style: none;
+            padding: 0;
+        }
+        #analysis li {
+            margin-bottom: 5px;
+        }
+        #tools {
+            margin-bottom: 20px;
+        }
+        #tools h2 {
+            margin-bottom: 10px;
+        }
+        #tools ul {
+            list-style: none;
+            padding: 0;
+        }
+        #tools li {
+            margin-bottom: 5px;
+        }
