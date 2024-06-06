@@ -239,3 +239,10 @@ footer {
   display: block;
   margin: 0 auto;
 }
+
+/* Para la Información basica */
+
+.centrado{
+  text-align: center;
+  margin-top: 70px;
+}
