@@ -255,3 +255,56 @@ footer {
   margin-left: 60px; /* Añade un margen a la izquierda del texto del cuerpo */
 }
 
+/* Establece el ancho del lienzo del gráfico de precios y ajusta la altura automáticamente */
+#priceChart canvas {
+    width: 60%; /* Ancho del 60% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para el contenedor de análisis */
+#analysis {
+    flex-direction: column; /* Los elementos hijos se apilan en una columna */
+    width: 38%; /* Ancho del 38% del contenedor principal */
+}
+
+/* Estilos para los encabezados de nivel 2 dentro del contenedor de análisis */
+#analysis h2 {
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+}
+
+/* Estilos para los párrafos dentro del contenedor de análisis */
+#analysis p {
+    margin-bottom: 5px; /* Margen inferior de 5 píxeles */
+}
+
+/* Estilos para las listas desordenadas dentro del contenedor de análisis */
+#analysis ul {
+    list-style: none; /* Elimina los estilos de viñeta predeterminados */
+    padding: 0; /* Elimina cualquier relleno predeterminado */
+}
+
+/* Estilos para los elementos de lista dentro del contenedor de análisis */
+#analysis li {
+    margin-bottom: 5px; /* Margen inferior de 5 píxeles */
+}
+
+/* Estilos para el contenedor de herramientas */
+#tools {
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+}
+
+/* Estilos para los encabezados de nivel 2 dentro del contenedor de herramientas */
+#tools h2 {
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+}
+
+/* Estilos para las listas desordenadas dentro del contenedor de herramientas */
+#tools ul {
+    list-style: none; /* Elimina los estilos de viñeta predeterminados */
+    padding: 0; /* Elimina cualquier relleno predeterminado */
+}
+
+/* Estilos para los elementos de lista dentro del contenedor de herramientas */
+#tools li {
+    margin-bottom: 5px; /* Margen inferior de 5 píxeles */
+}
