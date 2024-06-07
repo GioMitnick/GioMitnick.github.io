@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomonedas</title>
+    <!-- Importando Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #priceChart,
+        #analysis{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        #priceChart canvas {
+            width: 60%;
+            height: auto;
+        }
+        #analysis {
+            flex-direction: column;
+            width: 38%;
+        }
+        #analysis h2 {
+            margin-bottom: 10px;
+        }
+        #analysis p {
+            margin-bottom: 5px;
+        }
+        #analysis ul {
+            list-style: none;
+            padding: 0;
+        }
+        #analysis li {
+            margin-bottom: 5px;
+        }
+        #tools {
+            margin-bottom: 20px;
+        }
+        #tools h2 {
+            margin-bottom: 10px;
+        }
+        #tools ul {
+            list-style: none;
+            padding: 0;
+        }
+        #tools li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criptomonedas</h1>
+
+    <div id="priceChart">
+        <canvas id="cryptoChart" width="800" height="400"></canvas>
+    </div>
+
+    <div id="analysis">
+        <h2>Análisis de Mercado</h2>
+        <p>Bitcoin (BTC) - Análisis Técnico:</p>
+        <ul>
+            <li>Indicador MACD sugiere una tendencia alcista.</li>
+            <li>Bitcoin presenta un mejor comportamiento relativo frente al Ethereum, puesto que en la comparativa entre ambas criptodivisas, tenemos una estructura creciente favorable al Bitcoin, con un importante canal lateral de largo que el precio ha superado al alza sumado a, un canal lateral de corto plazo, con un objetivo alcista activo favorable</li>
+            <li>RSI indica que el mercado está sobrecomprado.</li>
+        </ul>
+        <p>Ethereum (ETH) - Análisis Fundamental:</p>
+        <ul>
+            <li>Desarrollo activo en la red Ethereum 2.0.</li>
+            <li>Adopción creciente de contratos inteligentes en aplicaciones descentralizadas.</li>
+        </ul>
+        <p>Ripple (XRP) - Perspectiva de Mercado:</p>
+        <ul>
+            <li>Ripple enfrenta desafíos regulatorios que podrían afectar su adopción.</li>
+            <li>Tecnología de RippleNet sigue ganando tracción en la industria financiera.</li>
+        </ul>
+        <p>Litecoin - Como funciona:</p>
+        <ul>
+            <li>Criptomoneda muy aceptada en el ecosistema, por lo que podremos calular su valor en casi cualquier moneda del mundo.</li>
+            <li>Con comisiones más bajas para realizar transacciones rápidas y sin intermediarios. El dólar estadounidense es la divisa de referencia a nivel mundial, por lo que también se utiliza para reflejar el valor de LTC.</li>
+        </ul>
+        <p>Bitcoin cash - Aparicion:</p>
+        </ul>
+            <li>Puede minarse, comprarse y venderse, y también se puede utilizar para liquidar transacciones. Representa una oportunidad rentable para invertir, sobre todo porque todavía no ha sido asaltada por las empresas y el público general. Sin embargo, esto podría cambiar en un futuro próximo. Por supuesto, debemos permanecer atentos, pues las predicciones sobre criptomonedas, como con cualquier inversión, no son una ciencia exacta.</li>
+            <li>Los tiempos de transferencia de Bitcoin Cash son más rápidos en comparación con su «modelo». Bitcoin requiere 10 minutos para confirmar una transacción. Este retraso se reduce para procesar transacciones en la criptomoneda bch.</li>
+    </div>
+
+    <div id="tools">
+        <h2>Herramientas de Seguimiento de Precios en Tiempo Real</h2>
+        <ul>
+            <li><a href="https://coinmarketcap.com/es/">CoinMarketCap</a></li>
+            <li><a href="https://www.coingecko.com/">CoinGecko</a></li>
+            <li><a href="https://www.cryptocompare.com/">CryptoCompare</a></li>
+        </ul>
+    </div>
+
+    <section id="resources">
+        <h2>Recursos Adicionales</h2>
+        <ul>
+            <li><a href="https://bitcoin.org/bitcoin.pdf">Documento técnico de Bitcoin</a></li>
+            <li><a href="https://ethereum.org/en/whitepaper/">Whitepaper de Ethereum</a></li>
+            <li><a href="https://ripple.com/insights/ripple-quarterly-xrp-market-report/">Informe de mercado de Ripple</a></li>
+        </ul>
+    </section>
+
+    <script>
+        // Datos de precios y tendencias
+        const cryptoData = {
+            labels: ['Bitcoin', 'Ethereum', 'Ripple', 'Litecoin', 'Bitcoin Cash'],
+            datasets: [{
+                label: 'Precio (USD)',
+                data: [40000, 3000, 1.5, 150, 500],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        // Configuración del gráfico
+        const chartOptions = {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        };
+
+        // Crear el gráfico
+        const ctx = document.getElementById('cryptoChart').getContext('2d');
+        const cryptoChart = new Chart(ctx, {
+            type: 'bar',
+            data: cryptoData,
+            options: chartOptions
+        });
+    </script>
+</body>
+</html>
+
