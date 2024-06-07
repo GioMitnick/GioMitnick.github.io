@@ -197,8 +197,10 @@ h1.a {
 }
 
 .news-image {
-  max-width: 100%; /* Limita el ancho máximo de la imagen de la noticia al 100% del ancho de su contenedor */
-  margin-bottom: 10px; /* Añade un margen debajo de la imagen de la noticia */
+  width: 350px; /* Establece el ancho de la imagen a 150 píxeles */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del ancho de su contenedor */
+  margin-bottom: 10px; /* Añade un margen debajo de la imagen */
 }
 
 .news-text {
