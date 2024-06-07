@@ -145,6 +145,12 @@ footer {
   margin-top: 50px; /* Añade un margen encima de la sección centrada */
 }
 
+h1.a {
+  color: #5353bc;/* Da el color del texto de los titulos de las noticias */
+  font-family: "Audiowide", sans-serif;/* Es el tipo de letra que tiene los titulos de las noticias */
+  font-size: 30px;/* Es el tamaño de letra que tiene los titulos de las noticias */
+}
+
 .btn:hover {
   background-color: #454595; /* Cambia el color de fondo de los botones al pasar el mouse sobre ellos */
 }
@@ -331,3 +337,5 @@ footer {
     /* Margen inferior de 5 píxeles */
     margin-bottom: 5px;
 }
+
+
