@@ -1,241 +1,257 @@
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  margin: 0; /* Elimina los márgenes alrededor del cuerpo de la página */
+  font-family: 'Poppins', sans-serif; /* Establece la fuente por defecto de la página */
+  display: flex; /* Establece el cuerpo de la página como un contenedor flexbox */
+  flex-direction: column; /* Organiza los elementos hijos del cuerpo en una columna */
+  min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana del navegador */
 }
 
 .content {
-  flex: 1;
+  flex: 1; /* Permite que el contenido se expanda para ocupar todo el espacio disponible en la dirección del eje principal (vertical en este caso) */
 }
 
 .navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 15px 0;
+  background-color: #fff; /* Establece el color de fondo de la barra de navegación a blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra a la barra de navegación */
+  padding: 15px 0; /* Añade un relleno arriba y abajo de la barra de navegación */
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  display: flex; /* Establece el contenedor como un contenedor flexbox */
+  justify-content: space-between; /* Distribuye el espacio igualmente entre los elementos hijos a lo largo del eje horizontal */
+  align-items: center; /* Centra los elementos hijos a lo largo del eje vertical */
+  padding: 0 20px; /* Añade un relleno a los lados del contenedor */
 }
 
 .logo a {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 800;
+  text-decoration: none; /* Elimina el subrayado de los enlaces en el logo */
+  font-size: 24px; /* Establece el tamaño de la fuente del logo */
+  font-weight: 800; /* Establece el grosor de la fuente del logo */
 }
 
 .quadriga {
-  color: #5353bc;
+  color: #5353bc; /* Establece el color del texto de 'quadriga' */
 }
 
 .cx {
-  color: #000;
+  color: #000; /* Establece el color del texto de 'cx' */
 }
 
 .main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-left: -10px;
+  list-style: none; /* Elimina los marcadores de lista del menú principal */
+  margin: 0; /* Elimina los márgenes alrededor de la lista del menú principal */
+  padding: 0; /* Elimina el relleno alrededor de la lista del menú principal */
+  margin-left: -10px; /* Añade un margen negativo a la izquierda de la lista del menú principal para alinearla con el resto del contenido */
 }
 
 .main-menu ul li {
-  display: inline-block;
+  display: inline-block; /* Muestra los elementos de la lista del menú principal en línea */
 }
 
 .main-menu ul li:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 15px; /* Añade un margen a la derecha de cada elemento de la lista del menú principal, excepto el último */
 }
 
 .main-menu ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado de los enlaces en el menú principal */
+  color: #000; /* Establece el color del texto de los enlaces en el menú principal */
+  font-weight: 500; /* Establece el grosor de la fuente de los enlaces en el menú principal */
+  transition: color 0.3s ease; /* Añade una transición suave al cambiar el color de los enlaces en el menú principal */
 }
 
 .main-menu ul li a:hover {
-  color: #5353bc;
+  text-shadow: 0 0 10px #D8BFD8, 0 0 20px #D8BFD8, 0 0 30px #D8BFD8, 0 0 40px #D8BFD8; /* Añade un resplandor al pasar el mouse sobre los enlaces en el menú principal */
 }
 
 footer {
-  background-color: #5353bc;
-  color: #fff;
-  padding: 15px 0;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  background-color: #5353bc; /* Establece el color de fondo del pie de página */
+  color: #fff; /* Establece el color del texto del pie de página */
+  padding: 15px 0; /* Añade un relleno arriba y abajo del pie de página */
+  text-align: center; /* Centra el texto del pie de página */
+  position: relative; /* Establece la posición del pie de página en relación a su posición normal */
+  bottom: 0; /* Alinea el pie de página con la parte inferior de su contenedor */
+  left: 0; /* Alinea el pie de página con el lado izquierdo de su contenedor */
+  width: 100%; /* Establece el ancho del pie de página al 100% del ancho de su contenedor */
 }
 
 .news-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
+  display: flex; /* Establece el contenedor de noticias como un contenedor flexbox */
+  flex-wrap: wrap; /* Permite que los elementos hijos del contenedor de noticias se envuelvan en múltiples líneas */
+  justify-content: space-around; /* Distribuye el espacio alrededor de los elementos hijos del contenedor de noticias */
+  padding: 20px; /* Añade un relleno alrededor del contenedor de noticias */
 }
 
 .news-item {
-  width: 300px;
-  margin-bottom: 20px;
+  width: 300px; /* Establece el ancho de cada elemento de noticias */
+  margin-bottom: 20px; /* Añade un margen debajo de cada elemento de noticias */
 }
 
 .news-item img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Establece el ancho de las imágenes en los elementos de noticias al 100% del ancho de su contenedor */
+  height: auto; /* Establece la altura de las imágenes en los elementos de noticias para mantener su proporción original */
 }
 
 .news-item h3 {
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 10px; /* Añade un margen encima de los títulos en los elementos de noticias */
+  font-size: 18px; /* Establece el tamaño de la fuente de los títulos en los elementos de noticias */
 }
 
 .news-item p {
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 10px; /* Añade un margen encima de los párrafos en los elementos de noticias */
+  font-size: 14px; /* Establece el tamaño de la fuente de los párrafos en los elementos de noticias */
 }
 
 .read-more {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #5353bc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Muestra los enlaces 'Leer más' en línea */
+  padding: 10px 20px; /* Añade un relleno alrededor de los enlaces 'Leer más' */
+  background-color: #5353bc; /* Establece el color de fondo de los enlaces 'Leer más' */
+  color: #fff; /* Establece el color del texto de los enlaces 'Leer más' */
+  text-decoration: none; /* Elimina el subrayado de los enlaces 'Leer más' */
+  border-radius: 5px; /* Redondea las esquinas de los enlaces 'Leer más' */
+  transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondo de los enlaces 'Leer más' */
 }
 
 .read-more:hover {
-  background-color: #454595;
+  background-color: #454595; /* Cambia el color de fondo de los enlaces 'Leer más' al pasar el mouse sobre ellos */
 }
 
 .back-to-news {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  color: #5353bc;
-  text-decoration: none;
-  font-weight: bold;
+  display: block; /* Muestra los enlaces 'Volver a noticias' en bloque */
+  text-align: center; /* Centra el texto de los enlaces 'Volver a noticias' */
+  margin-top: 20px; /* Añade un margen encima de los enlaces 'Volver a noticias' */
+  color: #5353bc; /* Establece el color del texto de los enlaces 'Volver a noticias' */
+  text-decoration: none; /* Elimina el subrayado de los enlaces 'Volver a noticias' */
+  font-weight: bold; /* Establece el grosor de la fuente de los enlaces 'Volver a noticias' */
 }
 
 .back-to-news:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Subraya los enlaces 'Volver a noticias' al pasar el mouse sobre ellos */
 }
 
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #5353bc;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Muestra los botones en línea */
+  padding: 10px 20px; /* Añade un relleno alrededor de los botones */
+  background-color: #5353bc; /* Establece el color de fondo de los botones */
+  color: white; /* Establece el color del texto de los botones */
+  text-decoration: none; /* Elimina el subrayado de los botones */
+  border-radius: 5px; /* Redondea las esquinas de los botones */
+  transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondo de los botones */
 }
 
 /*Para cada noticia*/
 
 .centered {
-  text-align: center;
-  margin-top: 50px; /* ajusta según sea necesario */
+  text-align: center; /* Centra el texto de la sección centrada */
+  margin-top: 50px; /* Añade un margen encima de la sección centrada */
 }
+
 .btn:hover {
-  background-color: #454595; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  background-color: #454595; /* Cambia el color de fondo de los botones al pasar el mouse sobre ellos */
 }
 
 .centered {
-  text-align: center;
-  margin-top: 50px;
-  margin-left: auto; /* Añade un margen en el lado izquierdo */
-  margin-right: auto; /* Añade un margen en el lado derecho */
-  max-width: 800px; /* Limita el ancho máximo del contenedor */
-  display: flex; /* Usa flexbox para organizar los elementos internos */
-  flex-direction: column; /* Apila los elementos verticalmente */
-  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto de la sección centrada */
+  margin-top: 50px; /* Añade un margen encima de la sección centrada */
+  margin-left: auto; /* Añade un margen a la izquierda de la sección centrada */
+  margin-right: auto; /* Añade un margen a la derecha de la sección centrada */
+  max-width: 800px; /* Limita el ancho máximo de la sección centrada */
+  display: flex; /* Establece la sección centrada como un contenedor flexbox */
+  flex-direction: column; /* Organiza los elementos hijos de la sección centrada en una columna */
+  align-items: center; /* Centra los elementos hijos de la sección centrada a lo largo del eje horizontal */
 }
 
 .news-container {
-  margin-top: 20px; /* Ajusta el margen superior del contenedor de noticias */
+  margin-top: 20px; /* Añade un margen encima del contenedor de noticias */
 }
 
 .news-title {
-  margin-bottom: 10px; /* Ajusta el margen inferior del título de la noticia */
+  margin-bottom: 10px; /* Añade un margen debajo del título de la noticia */
 }
 
 .news-image {
-  max-width: 100%; /* Ajusta el ancho máximo de la imagen para que sea responsive */
-  margin-bottom: 10px; /* Ajusta el margen inferior de la imagen */
+  max-width: 100%; /* Limita el ancho máximo de la imagen de la noticia al 100% del ancho de su contenedor */
+  margin-bottom: 10px; /* Añade un margen debajo de la imagen de la noticia */
 }
 
 .news-text {
-  margin-bottom: 20px;
-  text-align: justify; /* Justifica el texto */
+  margin-bottom: 20px; /* Añade un margen debajo del texto de la noticia */
+  text-align: justify; /* Justifica el texto de la noticia */
 }
 
 /* Estilos para la sección de video */
 .video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
-  margin: 0 auto; /* Centra el contenido horizontalmente */
-  max-width: 800px; /* Ancho máximo del contenedor */
-  padding: 0 20px; /* Añade un poco de espacio en los bordes */
+  display: flex; /* Establece la sección de video como un contenedor flexbox */
+  flex-direction: column; /* Organiza los elementos hijos de la sección de video en una columna */
+  align-items: center; /* Centra los elementos hijos de la sección de video a lo largo del eje horizontal */
+  justify-content: center; /* Centra los elementos hijos de la sección de video a lo largo del eje vertical */
+  margin-top: 50px; /* Añade un margen encima de la sección de video */
+  margin: 0 auto; /* Centra la sección de video horizontalmente */
+  max-width: 800px; /* Limita el ancho máximo de la sección de video */
+  padding: 0 20px; /* Añade un relleno a los lados de la sección de video */
 }
 
 .video-section h2,
 .mission-section h2 {
-  margin-bottom: 10px;
-  color: #5353bc; /* Cambia el color del título */
+  margin-bottom: 10px; /* Añade un margen debajo de los títulos en las secciones de video y misión */
+  color: #5353bc; /* Establece el color de los títulos en las secciones de video y misión */
 }
 
 .video-section p,
 .mission-section p {
-  margin-bottom: 20px; /* Espacio entre párrafos */
-  font-size: 15px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Añade un margen debajo de los párrafos en las secciones de video y misión */
+  font-size: 15px; /* Establece el tamaño de la fuente de los párrafos en las secciones de video y misión */
 }
 
 .video-container {
-  position: relative;
-  padding-bottom: 25%; /* Proporción del video (16:9) */
-  width: 100%; /* Ancho del contenedor del video */
+  position: relative; /* Establece la posición del contenedor de video en relación a su posición normal */
+  padding-bottom: 25%; /* Establece el relleno inferior del contenedor de video en relación a su ancho, creando una proporción de aspecto de 4:1 */
+  width: 100%; /* Establece el ancho del contenedor de video al 100% del ancho de su contenedor */
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 105%; /* Ajuste de tamaño del video */
-  height: 200%; /* Ajuste de tamaño del video */
+  position: absolute; /* Establece la posición del iframe del video en relación a su contenedor más cercano con posición no estática (el contenedor de video) */
+  top: 0; /* Alinea el iframe del video con la parte superior de su contenedor */
+  left: 0; /* Alinea el iframe del video con el lado izquierdo de su contenedor */
+  width: 105%; /* Establece el ancho del iframe del video al 105% del ancho de su contenedor */
+  height: 200%; /* Establece la altura del iframe del video al 200% de la altura de su contenedor */
 }
 
 .textvideotitle p,
 .textvideotitledos p {
-  text-align: center;
-  color: #5353bc; /* Color de texto */
+  text-align: center; /* Centra el texto de los párrafos en las clases 'textvideotitle' y 'textvideotitledos' */
+  color: #5353bc; /* Establece el color del texto de los párrafos en las clases 'textvideotitle' y 'textvideotitledos' */
 }
 
 /* Estilos para la sección de misión */
 .mission-section {
-  text-align: center; /* Centra el texto */
-  margin-top: 50px; /* Espacio entre la sección del video y la siguiente */
-  margin: 0 auto; /* Centra el contenido horizontalmente */
-  max-width: 800px; /* Ancho máximo del contenedor */
-  padding: 0 20px; /* Añade un poco de espacio en los bordes */
+  text-align: center; /* Centra el texto de la sección de misión */
+  margin-top: 50px; /* Añade un margen encima de la sección de misión */
+  margin: 0 auto; /* Centra la sección de misión horizontalmente */
+  max-width: 800px; /* Limita el ancho máximo de la sección de misión */
+  padding: 0 20px; /* Añade un relleno a los lados de la sección de misión */
 }
 
 .mission-section img {
-  max-width: 110%;
-  height: auto;
+  max-width: 110%; /* Limita el ancho máximo de las imágenes en la sección de misión al 110% del ancho de su contenedor */
+  height: auto; /* Establece la altura de las imágenes en la sección de misión para mantener su proporción original */
 }
 
 .centered-image {
-  display: block;
-  margin: 0 auto;
+  display: block; /* Muestra las imágenes centradas en bloque */
+  margin: 0 auto; /* Centra las imágenes centradas horizontalmente */
 }
+
+/* Para la Información basica */
+
+.subtitulos{               /* Subtitulos standard*/
+  color:#5353bc; /* Establece el color del texto de los subtítulos */
+  margin-left: 60px; /* Añade un margen a la izquierda de los subtítulos */
+  margin-top: 0px; /* Elimina el margen encima de los subtítulos */
+}
+
+.centrado {                  /*Cuerpo del texto*/
+  text-align: justify; /* Justifica el texto del cuerpo */
+  margin-right: 60px; /* Añade un margen a la derecha del texto del cuerpo */
+  margin-left: 60px; /* Añade un margen a la izquierda del texto del cuerpo */
+}
+
