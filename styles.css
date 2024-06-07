@@ -255,56 +255,79 @@ footer {
   margin-left: 60px; /* Añade un margen a la izquierda del texto del cuerpo */
 }
 
-/* Establece el ancho del lienzo del gráfico de precios y ajusta la altura automáticamente */
-#priceChart canvas {
-    width: 60%; /* Ancho del 60% del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-}
-
-/* Estilos para el contenedor de análisis */
+/* Estilos para los contenedores #priceChart y #analysis */
+#priceChart,
 #analysis {
-    flex-direction: column; /* Los elementos hijos se apilan en una columna */
-    width: 38%; /* Ancho del 38% del contenedor principal */
+    /* Configuración de los contenedores como flexibles */
+    display: flex;
+    /* Distribución uniforme de los elementos hijos con espacio entre ellos */
+    justify-content: space-between;
+    /* Margen inferior de 20 píxeles */
+    margin-bottom: 20px;
 }
 
-/* Estilos para los encabezados de nivel 2 dentro del contenedor de análisis */
+/* Estilos para elementos canvas dentro de #priceChart */
+#priceChart canvas {
+    /* Ancho del canvas al 60% del ancho del contenedor */
+    width: 60%;
+    /* Altura automática, para mantener la proporción */
+    height: auto;
+}
+
+/* Estilos específicos para el contenedor #analysis */
+#analysis {
+    /* Orientación de los elementos hijos como columna */
+    flex-direction: column;
+    /* Ancho del contenedor al 38% del ancho del contenedor padre */
+    width: 38%;
+}
+
+/* Estilos para encabezados h2 dentro de #analysis */
 #analysis h2 {
-    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+    /* Margen inferior de 10 píxeles */
+    margin-bottom: 10px;
 }
 
-/* Estilos para los párrafos dentro del contenedor de análisis */
+/* Estilos para párrafos dentro de #analysis */
 #analysis p {
-    margin-bottom: 5px; /* Margen inferior de 5 píxeles */
+    /* Margen inferior de 5 píxeles */
+    margin-bottom: 5px;
 }
 
-/* Estilos para las listas desordenadas dentro del contenedor de análisis */
+/* Estilos para listas no ordenadas dentro de #analysis */
 #analysis ul {
-    list-style: none; /* Elimina los estilos de viñeta predeterminados */
-    padding: 0; /* Elimina cualquier relleno predeterminado */
+    /* Eliminar estilos de viñetas y relleno */
+    list-style: none;
+    padding: 0;
 }
 
-/* Estilos para los elementos de lista dentro del contenedor de análisis */
+/* Estilos para elementos de lista dentro de #analysis */
 #analysis li {
-    margin-bottom: 5px; /* Margen inferior de 5 píxeles */
+    /* Margen inferior de 5 píxeles */
+    margin-bottom: 5px;
 }
 
-/* Estilos para el contenedor de herramientas */
+/* Estilos para el contenedor #tools */
 #tools {
-    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+    /* Margen inferior de 20 píxeles */
+    margin-bottom: 20px;
 }
 
-/* Estilos para los encabezados de nivel 2 dentro del contenedor de herramientas */
+/* Estilos para encabezados h2 dentro de #tools */
 #tools h2 {
-    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+    /* Margen inferior de 10 píxeles */
+    margin-bottom: 10px;
 }
 
-/* Estilos para las listas desordenadas dentro del contenedor de herramientas */
+/* Estilos para listas no ordenadas dentro de #tools */
 #tools ul {
-    list-style: none; /* Elimina los estilos de viñeta predeterminados */
-    padding: 0; /* Elimina cualquier relleno predeterminado */
+    /* Eliminar estilos de viñetas y relleno */
+    list-style: none;
+    padding: 0;
 }
 
-/* Estilos para los elementos de lista dentro del contenedor de herramientas */
+/* Estilos para elementos de lista dentro de #tools */
 #tools li {
-    margin-bottom: 5px; /* Margen inferior de 5 píxeles */
+    /* Margen inferior de 5 píxeles */
+    margin-bottom: 5px;
 }
