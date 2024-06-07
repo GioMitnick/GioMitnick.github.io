@@ -6,5 +6,4 @@ Integrantes:
 - Silvana Flores Guerrero
 - Marcos Rodolfo Macias Mondragon
 
-
 Verificar cambios: https://giomitnick.github.io/
