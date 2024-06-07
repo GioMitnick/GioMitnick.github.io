@@ -7,5 +7,3 @@ Integrantes:
 - Marcos Rodolfo Macias Mondragon --Información Básica
 
 Verificar cambios: https://giomitnick.github.io/
-
-holaaaa
